@@ -1,0 +1,13 @@
+{
+    "name": "windsurf437/fotkapl",
+    "description": "Fotka.pl php tools",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "windsurf437",
+            "email": "windsurf437@gmail.com"
+        }
+    ],
+    "require": {}
+}
