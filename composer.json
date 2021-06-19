@@ -9,5 +9,12 @@
             "email": "windsurf437@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Windsurf437\\FotkaPL\\": "src/"
+        }
+    }
 }
