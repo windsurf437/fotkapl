@@ -27,7 +27,27 @@ composer install
 ## Example
 
 ```php
+<?php
 
+use Windsurf437\FotkaPL\Fotka;
+use Windsurf437\FotkaPL\Response;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$fotka = new Fotka();
+$response = new Response(null);
+
+$fotka->login("login","password");
+$fotka->getOnlineUsers(Fotka::$GENDER_FEMALE,16,20,10,$response);
+
+foreach ($response->getObject()->online->users as $user){
+    echo $user->login.PHP_EOL;
+    echo $user->id.PHP_EOL;
+    echo "----".PHP_EOL;
+}
+
+
+return 0;
 ```
 
 ## Available methods
